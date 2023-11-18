@@ -1,6 +1,7 @@
 {
   "name": "sitik",
   "version": "0.1.0",
+  "homepage": "https://Defoshkin.github.io/site",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
