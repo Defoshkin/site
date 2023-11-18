@@ -1,38 +1,57 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F1EFEA;
+  font-family: 'Montserrat', sans-serif; /* Используем Montserrat */
+}
+#root {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.main_page {
+  background-color: #4856DC;
+  width: 100%;
+  height: 832px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  background-color: #4856DC;
+}
+
+.lines {
+  background-color: #4856DC;
+}
+
+.oglavlenie {
+  background-color: #4856DC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about_us {
+  background-color: #EBECFC;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+.DOLZHENKO {
+  display: flex;
+  background-color: #EBECFC;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 100px;
 }

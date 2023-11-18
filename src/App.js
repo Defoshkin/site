@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import { Center, Text, Button } from '@chakra-ui/react';
+import MainPage from './MainPage';
+import AboutUs from './AboutUs';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainPage/>
+      <AboutUs/>
+      <iframe title="Report Section" width="1000" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMGU0ZmEyN2QtNzNmZi00NzMzLWExYjktODVhMjY2ZDQyMTdjIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
     </div>
   );
 }
