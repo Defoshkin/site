@@ -96,3 +96,26 @@
   background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
   z-index: 999; /* Выше, чем модальное окно */
 }
+
+.footer {
+  background-color: #EBECFC;
+  height: 410px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.text_footer {
+  background-color: #EBECFC;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  background-color: #EBECFC;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}

@@ -4,6 +4,7 @@ import MainPage from './MainPage';
 import AboutUs from './AboutUs';
 import Otchet from './Otchet';
 import { useState } from 'react';
+import Footer from './Footer';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       <MainPage/>
       <AboutUs/>
       <Otchet/>
-      
+      <Footer/>
     </div>
   );
 }
