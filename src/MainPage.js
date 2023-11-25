@@ -71,12 +71,35 @@ const ReportForm = ({ onClose }) => {
     return Object.values(errors).every((error) => error === '');
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (validateForm()) {
-      // Здесь вы можете обработать отправку данных или выполнить другие действия
-      console.log('Отправленные данные:', formData);
+      try {
+        // Отправка данных формы боту
+        const response = await fetch(
+          `https://api.telegram.org/bot6315467720:AAHhv34zUhUC7M3YmBHYt15JpSBwChvYJeM/sendMessage`,
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              chat_id: '1481300654',
+              text: `Новая форма!\n\nИмя: ${formData.firstName}\nФамилия: ${formData.lastName}\nОтчество: ${formData.middleName}\nНазвание компании: ${formData.companyName}\nТелефон: ${formData.phone}\nТребования: ${formData.requirements}`,
+            }),
+          }
+        );
+  
+        const result = await response.json();
+        console.log(result);
+  
+        // Опционально: выполнить дополнительные действия после успешной отправки данных
+        console.log('Данные успешно отправлены:', formData);
+  
+      } catch (error) {
+        console.error('Ошибка при отправке данных:', error);
+      }
       // Закрыть форму после отправки данных
       onClose();
     } else {
