@@ -1,8 +1,20 @@
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
 .App {
   width: 100%;
   display: flex;
   flex-direction: column;
+  font-size: 10px;
 }
+@media (max-width: 767px) {
+  .App {
+    font-size: 5px; /* Уменьшенный размер шрифта для меньших экранов */
+  }
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -26,12 +38,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 100vh;
   
   background-color: #4856DC;
 }
 
 .lines {
   background-color: #4856DC;
+  height: 100vh;
+}
+@media (max-width: 767px) {
+  .lines {
+    display: none;
+  }
 }
 
 .oglavlenie {
@@ -40,7 +59,15 @@
   flex-direction: column;
   justify-content: center;
 }
-
+@media (max-width: 767px) {
+  .oglavlenie {
+    background-color: #4856DC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50%;
+  }
+}
 .about_us {
   background-color: #EBECFC;
   width: 100%;
@@ -54,13 +81,22 @@
   flex-direction: row;
   justify-content: center;
   margin-top: 50px;
-  gap: 100px;
+  gap: 10em;
 }
+@media (max-width: 767px) {
+  .DOLZHENKO {
+    display: flex;
+  background-color: #EBECFC;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 10em;
+  align-items: center;
+  }}
 
 .background {
   background-color: #4856DC;
   width: 100%;
-  height: 1500px;
   margin: 0; /* Избегаем отступов по умолчанию у body */
   display: flex;
   gap: 40px;
@@ -75,9 +111,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  width: 50%;
+  width: 70%;
  
-  gap: 30px;
+  gap: 3em;
 }
 .modal-container {
   position: fixed;
@@ -119,3 +155,12 @@
   flex-direction: row;
   gap: 50px;
 }
+.reported {
+  width: 1500px;
+  height: 800px;
+}
+@media (max-width: 767px) {
+  .reported {
+    width: 350px;
+    height: 300px;
+  }}

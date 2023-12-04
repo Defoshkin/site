@@ -6,7 +6,7 @@ const reportsData = [
     { name: 'Компании предоставляющее Бытовые услуги', link: 'https://app.powerbi.com/view?r=eyJrIjoiN2Y4MzJhNDQtYTBjMC00ZDM5LWFjYjAtYjVhM2E1MjQzM2NjIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
     { name: 'ПАО ГМК “Норильский никель”', link: 'https://app.powerbi.com/view?r=eyJrIjoiODE1ODViZmMtODkxMy00Mzg4LTlhYWQtY2RkNWE0Y2EwZmY0IiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
     { name: 'Рестораны и гостиницы', link: 'https://app.powerbi.com/view?r=eyJrIjoiMGQ0ZjI5ODAtMDE2Yy00ZTZhLThmOTktNzExMjVhYjNiZGY1IiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
-    { name: 'Компании по доставке грузов', link: 'https://app.powerbi.com/view?r=eyJrIjoiMGNhNWQwYjAtNzRiMC00ZGI0LWJiOTMtNmVkMzgzYTU1ZWU4IiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
+    { name: 'Компании по доставке грузов (2022)', link: 'https://app.powerbi.com/view?r=eyJrIjoiMGNhNWQwYjAtNzRiMC00ZGI0LWJiOTMtNmVkMzgzYTU1ZWU4IiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
     { name: 'Муниципальная собственность', link: 'https://app.powerbi.com/view?r=eyJrIjoiMTlmN2JiY2ItYzg4ZC00MTE1LWIxYTgtMGJkMzJlMjQ5N2I2IiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
     { name: 'Детские учреждения', link: 'https://app.powerbi.com/view?r=eyJrIjoiMDk5OTQ5MjctMTlhMi00ZTFlLWFkYzYtNDBlOTU1NmQ0MzgzIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
     { name: 'Имущество физических лиц', link: 'https://app.powerbi.com/view?r=eyJrIjoiNjU4NTI1ZWYtYTBlNC00ZmEyLTg3ODktMTY1ZTRlMTM0YmU2IiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
@@ -18,7 +18,7 @@ const reportsData = [
   ];
   
   const Report = ({ link }) => (
-    <iframe title="Report Section" width="1500" height="800" src={link} frameBorder="0" allowFullScreen="true"></iframe>
+    <iframe className='reported' title="Report Section"  src={link} frameBorder="0" allowFullScreen="true"></iframe>
   );
 
 const Otchet = () => {
@@ -37,7 +37,7 @@ const Otchet = () => {
           handleCloseReport();
         }
       };
-    const backgroundHeight = selectedReport ? '1700px' : '800px';
+    const backgroundHeight = selectedReport ? '1500px' : '800px';
 
     return (
         <div className='background' style={{ height: backgroundHeight}} onClick={handleBackgroundClick}>

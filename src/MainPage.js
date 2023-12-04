@@ -115,20 +115,21 @@ const ReportForm = ({ onClose }) => {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: '600px',
-    height: '620px',
-    padding: '30px',
+    width: '40em',
+    height: '40em',
+    padding: '2em',
     margin: '0 auto', // Центрирование по горизонтали
     borderRadius: '30px',
     zIndex: 1000,
   };
-
+  
   const labelStyle = {
     backgroundColor: '#EBECFC',
     marginBottom: '10px',
-    paddingBottom: '40px', // Уменьшено расстояние между label
+    paddingBottom: '20px', // Уменьшено расстояние между label
+    fontSize: '1em',
   };
-
+  
   const inputStyle = {
     backgroundColor: '#EBECFC',
     width: '100%',
@@ -138,7 +139,7 @@ const ReportForm = ({ onClose }) => {
     marginBottom: '10px',
     borderRadius: '10px',
   };
-
+  
   const buttonStyle = {
     backgroundColor: '#4856DC',
     color: '#EBECFC',
@@ -149,11 +150,14 @@ const ReportForm = ({ onClose }) => {
     cursor: 'pointer',
     marginTop: '20px', // Увеличено расстояние между полем и кнопкой
   };
+  
+  // Медиа-запрос для мобильных устройств
+
   return (
     <>
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(255, 0, 0, 0.5)', zIndex: 999 }} className="modal-background" onClick={handleBackgroundClick}></div>
       <div style={modalContainerStyle} className="form-container">
-        <button style={{ position: 'absolute', top: '10px', right: '10px', fontSize: '20px', cursor: 'pointer', border: 'none', backgroundColor: '#EBECFC' }} onClick={handleCloseButtonClick}>
+        <button style={{ position: 'absolute', top: '10px', right: '10px', fontSize: '2em', cursor: 'pointer', border: 'none', backgroundColor: '#EBECFC' }} onClick={handleCloseButtonClick}>
           x
         </button>
         <form style={{ backgroundColor: '#EBECFC' }} onSubmit={handleSubmit}>
@@ -195,7 +199,6 @@ const ReportForm = ({ onClose }) => {
     </>
   );
 };
-
 const MainPage = () => {
     const [isFormVisible, setFormVisible] = useState(false);
 
@@ -213,14 +216,14 @@ const MainPage = () => {
         <div className='main'>
           <div className='pustota'/>
           <div className='oglavlenie'> 
-              <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"60"}>Лаборатория</Text>
-              <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"60"}>социально-экономических</Text>
-              <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"60"}>исследований ЗГУ</Text>
+              <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"6em"}>Лаборатория</Text>
+              <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"6em"}>социально-экономических</Text>
+              <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"6em"}>исследований ЗГУ</Text>
               <Button marginTop={"30px"}
                 backgroundColor={"#F1EFEA"}
                 width={"40%"}
-                height={"50px"}
-                fontSize={"20"}
+                height={"3em"}
+                fontSize={"2em"}
                 borderRadius={"30"}
                 border={'none'}
                 onClick={handleButtonClick}
@@ -235,7 +238,7 @@ const MainPage = () => {
                 document.getElementById('portal-root')
               )}
           </div>
-          <svg className='lines' width="624" height="1091" viewBox="0 0 624 1091" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='lines' xmlns="http://www.w3.org/2000/svg">
             <line x1="1.99506" y1="-1.50657" x2="624.995" y2="823.493" stroke="#F7F7FF" strokeWidth="5"/>
             <line x1="235.396" y1="310.714" x2="3.396" y2="1089.71" stroke="#F7F7FF" strokeWidth="5"/>
             <line x1="109.382" y1="738.241" x2="216.382" y2="1074.24" stroke="#F7F7FF" strokeWidth="5"/>
