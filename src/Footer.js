@@ -15,10 +15,10 @@ const Footer = () => {
             </div>
             <div className='icon'>
                 <a href="https://web.telegram.org/a/#-1001624969604" backgroundColor={"#EBECFC"} target="_blank" rel="noopener noreferrer">
-                    <img src={telega} width="40em" backgroundColor={"#EBECFC"} alt="Link to Example" />
+                    <img src={telega} width="30em" backgroundColor={"#EBECFC"} alt="Link to Example" />
                 </a>
                 <a href="https://polaruniversity.ru/" backgroundColor={"#EBECFC"} target="_blank" rel="noopener noreferrer">
-                    <img src={website} width="40em" backgroundColor={"#EBECFC"} alt="Link to Another Example" />
+                    <img src={website} width="30em" backgroundColor={"#EBECFC"} alt="Link to Another Example" />
                 </a>
             </div>
         </div>

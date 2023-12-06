@@ -11,7 +11,7 @@ body {
 }
 @media (max-width: 767px) {
   .App {
-    font-size: 5px; /* Уменьшенный размер шрифта для меньших экранов */
+    font-size: 7px; /* Уменьшенный размер шрифта для меньших экранов */
   }
 }
 
@@ -22,6 +22,7 @@ body {
   background-color: #F1EFEA;
   font-family: 'Montserrat', sans-serif; /* Используем Montserrat */
 }
+
 #root {
   display: flex;
   justify-content: center;
@@ -75,13 +76,25 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 767px) {
+  .about_us  {
+    background-color: #EBECFC;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .DOLZHENKO {
   display: flex;
   background-color: #EBECFC;
   flex-direction: row;
   justify-content: center;
+
+  align-items: center;
   margin-top: 50px;
-  gap: 10em;
+
 }
 @media (max-width: 767px) {
   .DOLZHENKO {
@@ -99,7 +112,7 @@ body {
   width: 100%;
   margin: 0; /* Избегаем отступов по умолчанию у body */
   display: flex;
-  gap: 40px;
+  gap: 8em;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -110,8 +123,7 @@ body {
   background-color: #4856DC;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  width: 70%;
+  width: 80%;
  
   gap: 3em;
 }
@@ -142,7 +154,16 @@ body {
   align-items: center;
   gap: 10%;
 }
-
+@media (max-width: 767px) {
+  .footer {
+    background-color: #EBECFC;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+  }}
 .text_footer {
   background-color: #EBECFC;
   display: flex;
@@ -164,3 +185,69 @@ body {
     width: 350px;
     height: 300px;
   }}
+
+  .reports {
+    display: flex;
+    flex-direction: row;
+  }
+  @media (max-width: 767px) {
+    .reports {
+      width: 50em;
+      display: flex;
+      flex-direction: column;
+    }}
+
+.NameCategory {
+  background-color: #4856DC;
+  width: 60em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+@media (max-width: 767px) {
+  .NameCategory {
+    background-color: #4856DC;
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }}
+.textic {
+  background-color: #EBECFC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100em;
+  gap: 3em;
+}
+@media (max-width: 767px) {
+  .textic {
+    background-color: #EBECFC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50em;
+    gap: 3em;
+  }}
+  .report_button {
+    width: 15em;
+    height: 7em;
+    border-radius: 30px;
+    background-color:#EBECFC ;
+    font-size: 1.4em;
+    border: none;
+  }
+  @media (max-width: 767px) {
+    .report_button {
+      width: 13em;
+      height: 7em;
+      border-radius: 30px;
+      background-color:#EBECFC ;
+      white-space: normal;
+      font-size: 1.4em;
+    }}
+  
