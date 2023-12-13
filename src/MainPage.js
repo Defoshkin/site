@@ -127,7 +127,7 @@ const ReportForm = ({ onClose }) => {
     backgroundColor: '#EBECFC',
     marginBottom: '10px',
     paddingBottom: '20px', // Уменьшено расстояние между label
-    fontSize: '1em',
+    fontSize: '2em',
   };
   
   const inputStyle = {
@@ -156,10 +156,7 @@ const ReportForm = ({ onClose }) => {
   return (
     <>
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(255, 0, 0, 0.5)', zIndex: 999 }} className="modal-background" onClick={handleBackgroundClick}></div>
-      <div style={modalContainerStyle} className="form-container">
-        <button style={{ position: 'absolute', top: '10px', right: '10px', fontSize: '2em', cursor: 'pointer', border: 'none', backgroundColor: '#EBECFC' }} onClick={handleCloseButtonClick}>
-          x
-        </button>
+      <div className="form-container">
         <form style={{ backgroundColor: '#EBECFC' }} onSubmit={handleSubmit}>
           <label style={labelStyle}>
             Имя:
@@ -191,9 +188,14 @@ const ReportForm = ({ onClose }) => {
             <span style={{ color: 'red', backgroundColor: '#EBECFC' }}>{formErrors.requirements}</span>
             <input style={{ width: '100%', height: '100px', borderRadius: '10px', padding: '10px', boxSizing: 'border-box', marginTop: '5px', backgroundColor: '#EBECFC' }} name="requirements" value={formData.requirements} onChange={handleChange} />
           </label>
-          <button style={buttonStyle} type="submit">
-            Отправить
-          </button>
+          <div className='buttons'>
+            <button style={buttonStyle} type="submit">
+              Отправить
+            </button>
+            <button style={buttonStyle} onClick={handleCloseButtonClick}>
+              Закрыть
+            </button>
+          </div>
         </form>
       </div>
     </>

@@ -21,8 +21,13 @@ body {
   box-sizing: border-box;
   background-color: #F1EFEA;
   font-family: 'Montserrat', sans-serif; /* Используем Montserrat */
+  font-size: 10px;
 }
-
+@media (max-width: 767px) {
+  * {
+    font-size: 7px; /* Уменьшенный размер шрифта для меньших экранов */
+  }
+}
 #root {
   display: flex;
   justify-content: center;
@@ -103,7 +108,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-top: 50px;
-  gap: 10em;
+  gap: 5em;
   align-items: center;
   }}
 
@@ -116,7 +121,41 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100em;
 }
+@media (max-width: 767px) {
+  .background {
+    background-color: #4856DC;
+  width: 100%;
+  margin: 0; /* Избегаем отступов по умолчанию у body */
+  display: flex;
+  gap: 8em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 160em;
+  }}
+
+.sam_otchet {
+  background-color: #4856DC;
+  width: 100%;
+  margin: 0; /* Избегаем отступов по умолчанию у body */
+  display: flex;
+  justify-content: center;
+  height: 100em;
+}
+.qwe {
+  background-color: #4856DC;
+}
+@media (max-width: 767px) {
+  .sam_otchet {
+    background-color: #4856DC;
+  width: 100%;
+  margin: 0; /* Избегаем отступов по умолчанию у body */
+  display: flex;
+  justify-content: center;
+  height: 50em;
+  }}
 
 .report-grid {
   display: flex;
@@ -162,7 +201,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 2em;
   }}
 .text_footer {
   background-color: #EBECFC;
@@ -187,14 +226,18 @@ body {
   }}
 
   .reports {
+
     display: flex;
     flex-direction: row;
+    background-color: #4856DC;
   }
   @media (max-width: 767px) {
     .reports {
       width: 50em;
+      background-color: #4856DC;
       display: flex;
       flex-direction: column;
+      gap: 5em;
     }}
 
 .NameCategory {
@@ -251,3 +294,29 @@ body {
       font-size: 1.4em;
     }}
   
+.form-container {
+    background-color: #EBECFC;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40em;
+    height: 60em;
+    padding: 2em;
+    margin: 0 auto;
+    border-radius: 30px;
+    z-index: 1000;
+}
+@media (max-width: 767px) {
+  .form-container {
+    height: 80em;
+  }}
+
+.buttons {
+  background-color: #EBECFC;
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}

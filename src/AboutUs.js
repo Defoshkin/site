@@ -14,7 +14,7 @@ const AboutUs = () => {
                     <Text width={"70%"} backgroundColor={"#EBECFC"} fontSize={'2em'} textIndent={'3em'}>Основные направления деятельности лаборатории включают анализ и прогнозирование социально-экономического положения в арктических регионах, изучение проблем и перспектив развития инфраструктуры, исследование вопросов экологии, климата и здоровья населения, а также разработку рекомендаций для органов государственной власти и местного самоуправления.</Text>
                 </div>
                 
-                <img src={dolzhenko} style={{width: '25em', height: '25em', marginRight: "50px", borderRadius: "80px"}}></img>
+                <img src={dolzhenko} style={{width: '25em', height: '25em', borderRadius: "80px"}}></img>
             </div>
         </div>
     );
