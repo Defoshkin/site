@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='text_footer'>
-                <Text fontSize={'3em'} backgroundColor={"#EBECFC"}>88005553535</Text>
+                <Text fontSize={'3em'} backgroundColor={"#EBECFC"}></Text>
                 <Text fontSize={'3em'} backgroundColor={"#EBECFC"}>dolzhenkoEN@norvuz.ru</Text>
             </div>
             <div className='icon'>
