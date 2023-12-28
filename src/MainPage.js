@@ -219,8 +219,8 @@ const MainPage = () => {
           <div className='pustota'/>
           <div className='oglavlenie'> 
               <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"6em"}>Лаборатория</Text>
-              <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"6em"}>социально-экономических</Text>
-              <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"6em"}>исследований ЗГУ</Text>
+              <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"6em"}>социальных и экономических</Text>
+              <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"6em"}>исследований в арктике ЗГУ</Text>
               <Button marginTop={"30px"}
                 backgroundColor={"#F1EFEA"}
                 width={"40%"}

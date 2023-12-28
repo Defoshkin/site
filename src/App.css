@@ -71,7 +71,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 50%;
+    margin-left: 2em;
+    margin-top: 2em;
   }
 }
 .about_us {
@@ -133,7 +134,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 170em;
+  height: 180em;
   }}
 
 .sam_otchet {
@@ -318,5 +319,6 @@ body {
   background-color: #EBECFC;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 4em;
 }

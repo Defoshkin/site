@@ -3,17 +3,17 @@ import React, { useState } from 'react';
 import ReportGrid from './ReportGrid';
 
 const Company = [
-  { name: 'Компании предоставляющее IT услуги населению', link: 'https://app.powerbi.com/view?r=eyJrIjoiNTYzYTM5YTItN2ViNi00MzVkLTkzMGItNDU4NDYyMzBmOTIwIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
-  { name: 'Компании предоставляющее бытовые услуги населению (2022)', link: 'https://app.powerbi.com/view?r=eyJrIjoiN2Y4MzJhNDQtYTBjMC00ZDM5LWFjYjAtYjVhM2E1MjQzM2NjIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
+  { name: 'Компании, предоставляющие бытовые услуги населению (2022)', link: 'https://app.powerbi.com/view?r=eyJrIjoiN2Y4MzJhNDQtYTBjMC00ZDM5LWFjYjAtYjVhM2E1MjQzM2NjIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
+  { name: 'Компании, предоставляющие бытовые услуги населению (2023)', link: 'https://app.powerbi.com/view?r=eyJrIjoiMzcwYzllZDMtNDkzZi00MTA2LWE3NTItMjJjMzg1YzgwZTcwIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
   { name: 'Рестораны и гостиницы (2022)', link: 'https://app.powerbi.com/view?r=eyJrIjoiMGQ0ZjI5ODAtMDE2Yy00ZTZhLThmOTktNzExMjVhYjNiZGY1IiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
   { name: 'Рестораны и гостиницы (2023)', link: 'https://app.powerbi.com/view?r=eyJrIjoiMjE0YmJhZmUtZTg4Ny00YmFjLWJmMDEtY2E2OTlkNGNjOTNlIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
   { name: 'Компании по доставке грузов (2022)', link: 'https://app.powerbi.com/view?r=eyJrIjoiMGNhNWQwYjAtNzRiMC00ZGI0LWJiOTMtNmVkMzgzYTU1ZWU4IiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
   { name: 'Компании по доставке грузов (2023)', link: 'https://app.powerbi.com/view?r=eyJrIjoiMWY2YTczYTQtMDI5NS00YjkwLTg5ODktZTVlMGQyOTI0NDQ0IiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
   { name: 'Детские учреждения (2022)', link: 'https://app.powerbi.com/view?r=eyJrIjoiMDk5OTQ5MjctMTlhMi00ZTFlLWFkYzYtNDBlOTU1NmQ0MzgzIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
   { name: 'Детские учреждения (2023)', link: 'https://app.powerbi.com/view?r=eyJrIjoiYmEyNWYyNDMtMWJmNi00MGJjLTk4MTgtYWRiOGFiNDMyOWI5IiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
-  { name: 'Фонды', link: 'https://app.powerbi.com/view?r=eyJrIjoiODVjYzgzODUtY2M3ZC00NTk1LTllMmUtMTYyMjNlYzkxYzkwIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
   { name: 'Платформа по кадрам (2023)', link: 'https://app.powerbi.com/view?r=eyJrIjoiMTI0YmFjN2UtMWZkYy00YzlmLWI4ZjUtYzM0N2VmNDIwZjM0IiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
-  { name: 'Компании предоставляющее бытовые услуги населению (2023)', link: 'https://app.powerbi.com/view?r=eyJrIjoiMzcwYzllZDMtNDkzZi00MTA2LWE3NTItMjJjMzg1YzgwZTcwIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
+  { name: 'Компании, предоставляющие IT услуги населению', link: 'https://app.powerbi.com/view?r=eyJrIjoiNTYzYTM5YTItN2ViNi00MzVkLTkzMGItNDU4NDYyMzBmOTIwIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
+  { name: 'Статистические данные о сфере МСП', link: 'https://app.powerbi.com/view?r=eyJrIjoiNGU4NDYzYmYtMzgzNi00YWQxLTljYTYtNTUwMWY2ZGYwNDlmIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
 ];
 
 const Meri = [
@@ -21,6 +21,7 @@ const Meri = [
 { name: 'Меры поддержки МСП кредитными организациями', link: 'https://app.powerbi.com/view?r=eyJrIjoiOTlkZWQ2NTUtZGYzNi00MTBlLThlZTYtODZiNmFiYmI4NmI4IiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
 { name: 'Меры региональной поддержки МСП', link: 'https://app.powerbi.com/view?r=eyJrIjoiZWU1MTRjNzktYWE2Mi00MmVlLTliMmEtMGUxNTUxNmYzYWVjIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
 { name: 'Меры федеральной поддержки МСП', link: 'https://app.powerbi.com/view?r=eyJrIjoiZmEzMzU5ODctYzgwMi00MjRlLWI0MjMtMmE3NGM3OWU1MzVlIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
+{ name: 'Фонды', link: 'https://app.powerbi.com/view?r=eyJrIjoiODVjYzgzODUtY2M3ZC00NTk1LTllMmUtMTYyMjNlYzkxYzkwIiwidCI6ImU0YTFjYTRmLTFmNTktNDdhZS1iOTMzLWFlOTBkNzJlY2Q2MiIsImMiOjl9' },
 ];
 
 const Nedviz = [
