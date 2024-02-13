@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import {Text, Button } from '@chakra-ui/react';
 import ReactDOM from 'react-dom';
+import zgu from './zgu.png'; 
+import isit from './isit.jpeg';
+import logo from './logo.png';
 
 const ReportForm = ({ onClose }) => {
   const [formData, setFormData] = useState({
@@ -217,7 +220,18 @@ const MainPage = () => {
             <div className='main_page'>
         <div className='main'>
           <div className='pustota'/>
-          <div className='oglavlenie'> 
+          <div className='oglavlenie'>
+            <div className='icon_on_main'>
+                <a href="https://polaruniversity.ru/" style={{ backgroundColor: "#4856DC", display: "inline-block" }}>
+                    <img src={zgu} width="90em" alt="Link to Example" style={{ backgroundColor: "transparent" }}/>
+                </a>
+                <a href="https://polaruniversity.ru/about/faculties/fakultet-elektroenergetiki-ekonomiki-i-upravleniya-feeiu/kafedra-informatsionnye-sistemy-i-tekhnologii-isit/" style={{ backgroundColor: "#4856DC", display: "inline-block" }}>
+                    <img src={isit} width="90em" alt="Link to Example" style={{ borderRadius: "20px"}}/>
+                </a>
+                <a href="https://arnorilsk.ru/" style={{ backgroundColor: "#4856DC", display: "inline-block" }}>
+                    <img src={logo} width="90em" alt="Link to Example" style={{ backgroundColor: "transparent" }}/>
+                </a>
+            </div>
               <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"6em"}>Лаборатория</Text>
               <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"6em"}>социальных и экономических</Text>
               <Text backgroundColor={"#4856DC"} color={"#F1EFEA"} fontSize={"6em"}>исследований в арктике ЗГУ</Text>
@@ -230,7 +244,7 @@ const MainPage = () => {
                 border={'none'}
                 onClick={handleButtonClick}
               >
-                Заказать отчет
+                Заказать исследование
               </Button>
 
               {isFormVisible && ReactDOM.createPortal(

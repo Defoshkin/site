@@ -122,7 +122,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100em;
+  transition: height 0.3s ease;
+  height: 40em;
 }
 @media (max-width: 767px) {
   .background {
@@ -134,7 +135,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 180em;
+  transition: height 0.3s ease;
+  height: 80em;
   }}
 
 .sam_otchet {
@@ -231,6 +233,7 @@ body {
     display: flex;
     flex-direction: row;
     background-color: #4856DC;
+    flex-wrap: wrap;
   }
   @media (max-width: 767px) {
     .reports {
@@ -258,6 +261,23 @@ body {
     align-items: center;
     gap: 1em;
   }}
+  
+  .Category {
+    background-color: #4856DC;
+    display: flex;
+    flex-direction: row; /* Изменили на row */
+    gap: 3em;
+  }
+  
+  @media (max-width: 767px) {
+    .Category {
+      background-color: #4856DC;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+    }
+  }
 .textic {
   background-color: #EBECFC;
   display: flex;
@@ -321,4 +341,36 @@ body {
   flex-direction: row;
   justify-content: space-between;
   gap: 4em;
+}
+.but_otchet {
+  width: 18em;
+  height: 4em;
+  font-size: medium;
+  background-color: #EBECFC;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 2em;
+}
+.viz_report {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  background-color: #4856DC;
+}
+.report_name {
+  display: flex;
+  justify-content: center;
+  background-color: #4856DC;
+  color: #EBECFC;
+  font-size: 3em;
+}
+.icon_on_main {
+  background-color: #4856DC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  align-self: flex-start;
+  margin-top: 0;
+  margin-bottom: 2em;
 }
